@@ -1,0 +1,37 @@
+.nav-link-custom {
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.2s ease;
+}
+
+.nav-link-custom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.95);
+  transition: width 0.25s ease;
+}
+
+.nav-link-custom:hover {
+  color: #ffffff;
+}
+
+.nav-link-custom:hover::after {
+  width: 100%;
+}
+
+.navbar {
+  background: #2f2f3d;
+}
+
+.navbar-brand .badge {
+  background: #f5f5f5 !important;
+  color: #111827 !important;
+}
+
